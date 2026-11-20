@@ -1,0 +1,20 @@
+{
+  "project": "01-review-sentiment",
+  "seed": 42,
+  "data_source": "Repository-authored teaching reviews; fixed independently worded test set, not a public benchmark.",
+  "train_size": 72,
+  "test_size": 24,
+  "split": "Fixed authored train/test files; no tuning on test labels",
+  "metrics": {
+    "tfidf_logistic_regression": {
+      "accuracy": 0.625,
+      "positive_f1": 0.6086956521739131,
+      "macro_f1": 0.6243478260869566
+    },
+    "majority_baseline": {
+      "accuracy": 0.5,
+      "positive_f1": 0.0,
+      "macro_f1": 0.3333333333333333
+    }
+  }
+}
